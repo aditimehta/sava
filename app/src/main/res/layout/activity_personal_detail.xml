@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalDetailActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_FFFFFF">
+
+        <TextView
+            android:id="@+id/personaldetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Personal Detail"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/view2"
+            android:layout_alignTop="@+id/view2"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="46dp"
+            android:text="Title*"
+            android:textColor="@color/blue_fb_3b5998" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="77dp"
+            android:src="@drawable/greyuserng" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/view2"
+            android:layout_alignTop="@+id/view2"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="68dp"
+            android:entries="@array/title_arrays"></android.support.v7.widget.AppCompatSpinner>
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="137dp"
+            android:src="@drawable/greyuserng" />
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/txt_sign"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="125dp"
+            android:hint="@string/maheshmaurya"
+            android:textColorLink="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/view2"
+            android:layout_alignTop="@+id/view2"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="110dp"
+            android:text="Name*"
+            android:textColor="@color/blue_fb_3b5998" />
+
+        <TextView
+            android:id="@+id/txt_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="180dp"
+            android:text="Gender*"
+            android:textColor="@color/blue_fb_3b5998" />
+
+        <RadioGroup
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/view2"
+            android:layout_marginTop="200dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_alignStart="@+id/view2"
+                android:layout_marginStart="50dp"
+                android:text="Male" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_marginLeft="30dp"
+                android:text="Female" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_marginLeft="30dp"
+                android:text="Other" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/view2"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="250dp"
+            android:text="DOB*"
+            android:textColor="@color/blue_fb_3b5998" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/view2"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="280dp"
+            android:src="@drawable/calendar" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="270dp"
+            android:inputType="date" />
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

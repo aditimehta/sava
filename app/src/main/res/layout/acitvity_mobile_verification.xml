@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_verify"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/white_FFFFFF">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/img_left_arrow"
+        android:src="@drawable/arrowleftred"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mobileverify"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/txt_wc"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/txt_pls_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/plsverifynumber" />
+
+
+    <TextView
+        android:id="@+id/txt_mobile_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="@string/number"
+        android:textSize="20sp"
+        android:textColor="@color/blue_fb_3b5998"
+        android:visibility="visible"
+        android:layout_alignBottom="@+id/img_edit"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/view_no"
+        android:layout_toRightOf="@+id/txt_mobile_number"
+        android:layout_below="@+id/txt_pls_verify"
+        android:background="@color/black_000000">
+    </View>
+
+    <ImageView
+        android:id="@+id/img_edit"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/txt_pls_verify"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/view_no"
+        android:onClick="displayEditText"
+        android:src="@drawable/greyedit" />
+
+    <EditText
+        android:id="@+id/edt_otp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_mobile_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="@string/enterotp" />
+
+    <ImageView
+        android:id="@+id/img_key"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:src="@drawable/greykey"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@+id/edt_otp" />
+
+    <TextView
+        android:id="@+id/txt_digit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digit"
+        android:layout_marginTop="135dp"
+        android:layout_toEndOf="@+id/txt_pls_verify" />
+
+
+    <TextView
+        android:id="@+id/txt_didnt_receive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_otp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Didn\'t receive OTP?"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/bttn_resend_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edt_otp"
+        android:layout_below="@+id/txt_didnt_receive"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/dark_grey_98a1a5"
+        android:text="@string/resendotp"
+        android:textAllCaps="false"
+        android:textColor="@color/white_FFFFFF"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_mobile_number"
+        android:layout_alignTop="@+id/bttn_resend_otp"
+        android:background="@color/dark_grey_98a1a5"
+        android:text="@string/callme"
+        android:layout_marginLeft="100dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white_FFFFFF" />
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/cardview_1"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fill with Current Location"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:id="@+id/cardview_2"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white_FFFFFF">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="17sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="16dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/apartments"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="80dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address1"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/blue_fb_3b5998"
+                android:id="@+id/textView29" />
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textView29"
+                android:layout_alignStart="@+id/textView29" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address2"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="110dp"
+                android:textColor="@color/blue_fb_3b5998"
+                android:id="@+id/textView291" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="Wohlig Technology"
+                android:layout_below="@+id/textView29"
+                android:layout_alignStart="@+id/textView29" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address2"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="110dp"
+                android:textColor="@color/blue_fb_3b5998"
+                android:id="@+id/textView292" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="Opposite Axis Bank"
+                android:layout_below="@+id/textView292"
+                android:layout_alignStart="@+id/textView292" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country/Town"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="170dp"
+                android:textColor="@color/blue_fb_3b5998"
+                android:id="@+id/textView293" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="Sion"
+                android:id="@+id/edt_sion"
+                android:layout_below="@+id/textView293"
+                android:layout_alignStart="@+id/textView293" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:layout_below="@+id/edt_sion"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/blue_fb_3b5998"
+                android:id="@+id/textView294" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="Mumbai"
+                android:layout_below="@+id/textView294"
+                android:layout_alignStart="@+id/textView294" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pincode"
+                android:layout_below="@+id/textView294"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/blue_fb_3b5998"
+                android:id="@+id/textView295" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="400 022"
+                android:layout_below="@+id/textView295"
+                android:layout_alignStart="@+id/textView295" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:layout_below="@+id/textView295"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/blue_fb_3b5998"
+                android:id="@+id/textView296" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="India"
+                android:layout_below="@+id/textView296"
+                android:layout_alignStart="@+id/textView296" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

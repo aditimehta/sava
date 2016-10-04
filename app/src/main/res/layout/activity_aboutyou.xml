@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    tools:context=".AboutYouActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About You"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dietary needs"
+        android:id="@+id/txt_dietary"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/blue_fb_3b5998"/>
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/edt_dietary"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/txt_dietary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Household:"
+        android:layout_below="@+id/edt_dietary"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Annual Income"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/blue_fb_3b5998"
+        android:id="@+id/textView30" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:entries="@array/income_arrays"
+        android:layout_below="@+id/textView30"
+        android:layout_alignStart="@+id/textView30">
+    </android.support.v7.widget.AppCompatSpinner>
+</RelativeLayout>
+</android.support.v7.widget.CardView>

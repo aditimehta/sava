@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:style="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel_ccd2"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/store" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="75dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="90dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView9"
+                android:layout_centerVertical="true"
+                android:text="@string/lastvisited"
+                android:textColor="@color/white_FFFFFF" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="90dp"
+                android:text="@string/cafe_coffee_day"
+                android:textColor="@color/white_FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_malad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView12"
+                android:layout_below="@+id/textView12"
+                android:layout_marginTop="-4dp"
+                android:text="@string/malad_west"
+                android:textColor="@color/white_FFFFFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/gold2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txt_malad"
+                android:layout_marginLeft="18dp"
+                android:background="#ebb651"
+                android:padding="4dp"
+                android:text="@string/gold"
+                android:textColor="@color/white_FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignEnd="@+id/textView11"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/share" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_congo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/rel_ccd2"
+            android:background="#4cbb6e">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/forma1" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView10"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/congratulations"
+                android:textColor="@color/white_FFFFFF"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView18"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/you_redeemed_a_free_coffee"
+                android:textColor="@color/white_FFFFFF"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ccd_loyalty1"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/rel_congo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/cafe_coffee_day_loyalty"
+            android:textColor="@color/black_000000"
+            android:textSize="18sp" />
+
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_below="@id/ccd_loyalty1"
+            android:layout_marginTop="10dp"
+            android:background="@color/white_FFFFFF">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_FFFFFF"
+                    app:tabGravity="fill"
+                    app:tabMinWidth="120dp"
+                    app:tabMode="scrollable"
+                    app:tabSelectedTextColor="@color/colorPrimaryDark"
+                    app:tabTextColor="@color/black_000000">
+
+                </android.support.design.widget.TabLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="480dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            </android.support.v4.view.ViewPager>
+        </android.support.design.widget.CoordinatorLayout>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_free_beer"
+            android:layout_width="500dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/coordinator"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            card_view:cardCornerRadius="2dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_free_beer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/beer"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/wine"
+
+                    />
+
+                <TextView
+                    android:id="@+id/free_beer"
+                    android:layout_width="600dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/beer"
+                    android:text="@string/free_beer_or_house_wine"
+                    android:textColor="#4C4C4C"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/image_free_beer_right_arrow"
+                    android:layout_width="18dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/Carte_menu"
+                    android:layout_width="600dp"
+                    android:layout_height="22dp"
+                    android:layout_below="@+id/free_beer"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/beer"
+                    android:text="@string/carte_menu_with_a_cham"
+                    android:textColor="@color/grey_e5e5e5"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_33_off"
+            android:layout_width="500dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/card_view_free_beer"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            card_view:cardCornerRadius="2dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_33_off"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/idea_icon"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/idea_icon"
+
+                    />
+
+                <TextView
+                    android:id="@+id/text_33_off"
+                    android:layout_width="720dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/idea_icon"
+                    android:text="@string/_33_off_on_your_first_visit"
+                    android:textColor="#4C4C4C"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/image_right_arrow_33_off"
+                    android:layout_width="18dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/meal_from_menu"
+                    android:layout_width="650dp"
+                    android:layout_height="22dp"
+                    android:layout_below="@+id/text_33_off"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/idea_icon"
+                    android:text="@string/meal_from_the_a_la_carte_menu_with_a_cham"
+                    android:textColor="@color/grey_e5e5e5"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_more_offers"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/card_view_33_off"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_more_offers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/more_offers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="41dp"
+                    android:text="@string/more_offers_5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/image_right_arrow_more_offers"
+                    android:layout_width="18dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

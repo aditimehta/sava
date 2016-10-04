@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="14dp"
+            android:text="Contact"
+            android:textColor="@color/black_000000"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="72dp"
+            android:src="@drawable/greyemail" />
+
+        <TextView
+            android:id="@+id/email1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView24"
+            android:layout_below="@+id/textView24"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Email"
+            android:textColor="@color/blue_fb_3b5998" />
+
+        <EditText
+            android:id="@+id/edt_otp"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email1"
+            android:layout_marginLeft="40dp"
+            android:hint="maheshwohlig@gmail.com" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="142dp"
+            android:src="@drawable/greymobile" />
+
+        <TextView
+            android:id="@+id/txt_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/edt_otp"
+            android:layout_below="@+id/edt_otp"
+            android:layout_marginTop="10dp"
+            android:text="Contact Number"
+            android:textColor="@color/blue_fb_3b5998" />
+
+        <EditText
+            android:id="@+id/edt_number"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="70dp"
+            android:hint="+ 44" />
+
+        <EditText
+            android:id="@+id/edt_number1"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_toRightOf="@+id/edt_number"
+            android:hint="9999999999" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

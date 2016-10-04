@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/savalogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:src="@drawable/savalogo" />
+
+    <RelativeLayout
+        android:id="@+id/layout_fb"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/savalogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:background="@color/white_FFFFFF">
+
+        <TextView
+            android:id="@+id/txt_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/fb"
+            android:textColor="@color/blue_fb_3b5998"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignBottom="@+id/txt_fb"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/fbicon" />
+
+        <View
+            android:id="@+id/view_fb"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:background="@color/blue_fb_3b5998"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_gplus"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/layout_fb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/white_FFFFFF">
+
+        <TextView
+            android:id="@+id/txt_gplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/gplus"
+            android:textColor="@color/red_gplus_d34836"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_gplus"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/txt_gplus"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/googleplusicon" />
+
+        <View
+            android:id="@+id/view_gplus"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:background="@color/red_gplus_d34836"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_email"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/layout_gplus"
+        android:layout_below="@+id/layout_gplus"
+        android:layout_marginTop="20dp"
+        android:background="@color/white_FFFFFF">
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/email"
+            android:textColor="@color/green_4ca64c"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/txt_email"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/emailicon" />
+
+        <View
+            android:id="@+id/view_email"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:background="@color/green_4ca64c"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_new"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/layout_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/txt_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="I\'m New"
+            android:textColor="@color/white_FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view_new"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:background="@color/white_FFFFFF"></View>
+
+        <ImageView
+            android:id="@+id/img_new"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/txt_new"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/newperson" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_new"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="@string/skipnproceed"
+        android:textColor="@color/black_000000"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

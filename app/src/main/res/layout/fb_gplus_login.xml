@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:textSize="17sp"
+        android:textColor="@color/black_000000"
+        android:layout_below="@+id/txt_signup"
+        android:layout_alignEnd="@+id/txt_signup"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="180dp"
+        android:id="@+id/or" />
+
+    <RelativeLayout
+        android:id="@+id/rel_fb"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/or"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue_fb_3b5998" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/fbwhite" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_gplus"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/or"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/rel_fb">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/red_gplus_d34836" />
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/gpluswhite" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

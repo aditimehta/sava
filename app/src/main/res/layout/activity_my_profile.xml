@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="30dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="800dp">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="55dp"
+            android:src="@drawable/mic"
+            app:siBorderColor="@color/dark_grey_98a1a5"
+            app:siBorderWidth="3sp" />
+
+        <ImageView
+            android:id="@+id/profilepic"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView"
+            android:background="@drawable/circlegrey"
+            android:padding="3dp"
+            android:src="@drawable/cam" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/profilepic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Personal Detail"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/pencilblack" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/view2"
+                    android:layout_alignTop="@+id/view2"
+                    android:layout_marginStart="53dp"
+                    android:layout_marginTop="46dp"
+                    android:text="Title"
+                    android:textColor="@color/blue_fb_3b5998" />
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="65dp"
+                    android:src="@drawable/greyuserng" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView18"
+                    android:layout_alignStart="@+id/title"
+                    android:text="Mr." />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/view2"
+                    android:layout_alignTop="@+id/view2"
+                    android:layout_marginStart="53dp"
+                    android:layout_marginTop="100dp"
+                    android:text="Name*"
+                    android:textColor="@color/blue_fb_3b5998" />
+
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="120dp"
+                    android:src="@drawable/greyuserng" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView19"
+                    android:layout_alignStart="@+id/textView31"
+                    android:text="Mahesh Maurya" />
+
+                <TextView
+                    android:id="@+id/txt_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="53dp"
+                    android:layout_marginTop="160dp"
+                    android:text="Gender*"
+                    android:textColor="@color/blue_fb_3b5998" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_gender"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/imageView19"
+                    android:text="Male" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/view2"
+                    android:layout_marginStart="53dp"
+                    android:layout_marginTop="220dp"
+                    android:text="DOB*"
+                    android:textColor="@color/blue_fb_3b5998" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView32"
+                    android:layout_below="@+id/textView32"
+                    android:layout_marginTop="10dp"
+                    android:text="23/12/1993" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignStart="@+id/view2"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="245dp"
+                    android:src="@drawable/calendar" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_below="@+id/card1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Contact Detail"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/pencilblack" />
+
+                <TextView
+                    android:id="@+id/email1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView24"
+                    android:layout_below="@+id/textView24"
+                    android:layout_marginLeft="53dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Email"
+                    android:textColor="@color/blue_fb_3b5998" />
+
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="62dp"
+                    android:src="@drawable/greyemail" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView21"
+                    android:layout_alignStart="@+id/email1"
+                    android:text="maheshwohlig@gmail.com" />
+
+                <TextView
+                    android:id="@+id/txt_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/edt_otp"
+                    android:layout_below="@+id/edt_otp"
+                    android:layout_marginLeft="53dp"
+                    android:layout_marginTop="105dp"
+                    android:text="Contact Number"
+                    android:textColor="@color/blue_fb_3b5998" />
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="125dp"
+                    android:src="@drawable/greymobile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView23"
+                    android:layout_alignStart="@+id/txt_contact"
+                    android:text="+ 44 9999999999" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/card2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/pencilblack" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Address" />
+
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/apartments" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView24"
+                    android:layout_toEndOf="@+id/textView33"
+                    android:text="Wohlig Technology Opposite Axis Bank
+        Sion, Mumbai-400 022, India" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_below="@+id/card3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/pencilblack" />
+
+                <TextView
+                    android:id="@+id/textView331"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="About You" />
+
+                <TextView
+                    android:id="@+id/txt_dietary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Dietary needs"
+                    android:textColor="@color/blue_fb_3b5998" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/txt_dietary"
+                    android:layout_marginTop="60dp"
+                    android:text="Diabetic,Kosher Halal, Vegetarian" />
+
+                <TextView
+                    android:id="@+id/txt_household"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="90dp"
+                    android:text="Household"
+                    android:textColor="@color/blue_fb_3b5998" />
+
+                <TextView
+                    android:id="@+id/txt_Annual_Income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="170dp"
+                    android:text="Household"
+                    android:textColor="@color/blue_fb_3b5998" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/txt_dietary"
+                    android:layout_marginTop="195dp"
+                    android:text="5 lakh - 6 lakh" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

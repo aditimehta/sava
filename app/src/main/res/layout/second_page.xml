@@ -1,0 +1,1578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relative_entire"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/restaurant"
+            android:tint="@color/transparent_black_000000" />
+
+        <RelativeLayout
+            android:id="@+id/relative_transparent"
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:layout_alignBottom="@+id/cover_image"
+            android:layout_marginTop="100dp"
+            android:background="@color/transparent_black_000000">
+
+            <TextView
+                android:id="@+id/modern_ccd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="21dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/modern_cafe_coffee_day"
+                android:textColor="@color/white_FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pizza_restro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/modern_ccd"
+                android:layout_alignStart="@+id/modern_ccd"
+                android:layout_below="@+id/modern_ccd"
+                android:text="@string/pizza_restaurant_italian_restaurant"
+                android:textColor="@color/white_FFFFFF"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pizza_restro">
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="2dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/open" />
+
+
+                <TextView
+                    android:id="@+id/opens_in_10_mins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/opens_in_10_mins"
+                    android:textColor="@color/white_FFFFFF"
+                    android:textSize="11sp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/timing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pizza_restro"
+                android:layout_marginLeft="132dp"
+                android:layout_marginTop="6dp"
+                android:text="@string/_8am_to_11am_12_noon_to_5pm"
+                android:textColor="@color/white_FFFFFF"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/heart_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/circle"
+                android:padding="4dp"
+                android:src="@drawable/heart" />
+
+
+            <ImageView
+                android:id="@+id/phone_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/heart_icon"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/circle"
+                android:padding="4dp"
+                android:src="@drawable/mobile" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/relative_transparent">
+
+            <ImageView
+                android:id="@+id/google_maps"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentBottom="true" />
+
+            <RelativeLayout
+                android:id="@+id/relative_address"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@color/white_FFFFFF">
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="320dp"
+                    android:layout_height="43dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/_1st_floor_the_destination_gm_road_chembur_east_mumbai_maharashtra"
+                    android:textColor="#4C4C4C"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/navigation_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="48dp"
+                    android:layout_height="22dp"
+                    android:layout_alignEnd="@+id/navigation_icon"
+                    android:layout_alignRight="@+id/navigation_icon"
+                    android:layout_below="@+id/navigation_icon"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/tenmiles"
+                    android:textColor="@color/dark_grey_98a1a5"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_free_beer"
+            android:layout_width="500dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relative3"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            card_view:cardCornerRadius="2dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_free_beer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/beer"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/wine"
+
+                    />
+
+                <TextView
+                    android:id="@+id/free_beer"
+                    android:layout_width="600dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/beer"
+                    android:text="@string/free_beer_or_house_wine"
+                    android:textColor="#4C4C4C"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/image_free_beer_right_arrow"
+                    android:layout_width="18dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/Carte_menu"
+                    android:layout_width="600dp"
+                    android:layout_height="22dp"
+                    android:layout_below="@+id/free_beer"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/beer"
+                    android:text="@string/carte_menu_with_a_cham"
+                    android:textColor="@color/grey_e5e5e5"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_33_off"
+            android:layout_width="500dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/card_view_free_beer"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            card_view:cardCornerRadius="2dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_33_off"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/idea_icon"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/idea_icon"
+
+                    />
+
+                <TextView
+                    android:id="@+id/text_33_off"
+                    android:layout_width="720dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/idea_icon"
+                    android:text="@string/_33_off_on_your_first_visit"
+                    android:textColor="#4C4C4C"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/image_right_arrow_33_off"
+                    android:layout_width="18dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/meal_from_menu"
+                    android:layout_width="650dp"
+                    android:layout_height="22dp"
+                    android:layout_below="@+id/text_33_off"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/idea_icon"
+                    android:text="@string/meal_from_the_a_la_carte_menu_with_a_cham"
+                    android:textColor="@color/grey_e5e5e5"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_more_offers"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/card_view_33_off"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_more_offers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/more_offers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="41dp"
+                    android:text="@string/more_offers_5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/image_right_arrow_more_offers"
+                    android:layout_width="18dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/ccd_loyalty"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/card_view_more_offers"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/cafe_coffee_day_loyalty"
+            android:textColor="@color/black_000000"
+            android:textSize="18sp" />
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_points"
+            android:layout_width="500dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ccd_loyalty"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            card_view:cardCornerRadius="2dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_points"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/green_4ca64c">
+
+                <TextView
+                    android:id="@+id/points"
+                    android:layout_width="720dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="1730"
+                    android:textColor="@color/white_FFFFFF"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total_points"
+                    android:layout_width="650dp"
+                    android:layout_height="22dp"
+                    android:layout_below="@+id/points"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="@string/total_points"
+                    android:textColor="@color/white_FFFFFF"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/last_visited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_alignEnd="@+id/total_points"
+                    android:layout_alignRight="@+id/total_points"
+                    android:layout_below="@+id/total_points"
+                    android:text=" Last visited 6 hours ago"
+                    android:textColor="@color/white_FFFFFF"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_below="@id/card_view_points"
+            android:layout_marginTop="5dp"
+            android:background="@color/white_FFFFFF">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_FFFFFF"
+                    app:tabGravity="fill"
+                    app:tabMinWidth="120dp"
+                    app:tabMode="scrollable"
+                    app:tabSelectedTextColor="@color/colorPrimaryDark"
+                    app:tabTextColor="@color/black_000000">
+
+                </android.support.design.widget.TabLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="480dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            </android.support.v4.view.ViewPager>
+        </android.support.design.widget.CoordinatorLayout>
+
+        <TextView
+            android:id="@+id/claim_offer"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/coordinator"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/you_can_claim_2_redemption_offers"
+            android:textColor="@color/black_000000"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_burger"
+            android:layout_width="500dp"
+            android:layout_height="260dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/claim_offer"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            card_view:cardCornerRadius="2dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_burger"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_burger"
+                    android:layout_width="450dp"
+                    android:layout_height="240dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/offer4"
+                    android:tint="@color/transparent_black_000000" />
+
+                <TextView
+                    android:id="@+id/free_burger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/expires_in"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginStart="14dp"
+                    android:text="@string/free_burger"
+                    android:textColor="@color/white_FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/expires_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/image_burger"
+                    android:layout_alignLeft="@+id/free_burger"
+                    android:layout_alignStart="@+id/free_burger"
+                    android:layout_marginBottom="11dp"
+                    android:text="@string/expires"
+                    android:textColor="@color/white_FFFFFF" />
+
+                <TextView
+                    android:id="@+id/points_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="210dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="5dp"
+                    android:text="@string/_500_points"
+                    android:textColor="@color/white_FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_pizza"
+            android:layout_width="500dp"
+            android:layout_height="260dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/card_view_burger"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            card_view:cardCornerRadius="2dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_pizza"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="450dp"
+                    android:layout_height="240dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/offer5"
+                    android:tint="@color/transparent_black_000000" />
+
+                <TextView
+                    android:id="@+id/free_pizza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView11"
+                    android:layout_marginBottom="19dp"
+                    android:layout_marginLeft="17dp"
+                    android:text="@string/free_pizza"
+                    android:textColor="@color/white_FFFFFF"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/points_650"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/free_pizza"
+                    android:layout_alignEnd="@+id/free_pizza"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@+id/free_pizza"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="5dp"
+                    android:text="@string/_650_points"
+                    android:textColor="@color/white_FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_more_redemption_offers"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/card_view_pizza"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_more_redemption_offers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/more_redemption_offers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="41dp"
+                    android:text="@string/more_redemption_offers_5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/image_right_arrow_more_redemption"
+                    android:layout_width="18dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/arrow" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_loyalty_statement"
+            android:layout_width="500dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/card_view_more_redemption_offers"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            card_view:cardCornerRadius="2dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_loyalty_statement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_loyalty"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/loyalty"
+
+                    />
+
+                <TextView
+                    android:id="@+id/loyalty_statement"
+                    android:layout_width="650dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@+id/image_loyalty"
+                    android:gravity="center_vertical"
+                    android:text="@string/loyalty_statement"
+                    android:textColor="@color/light_black_666666"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/image_right_arrow_loyalty_statement"
+                    android:layout_width="18dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_comm"
+            android:layout_width="500dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/card_view_loyalty_statement"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            card_view:cardCornerRadius="2dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_comm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/idea_icon_comm"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/idea_icon"
+
+                    />
+
+                <TextView
+                    android:id="@+id/comm"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@+id/idea_icon_comm"
+                    android:gravity="center_vertical"
+                    android:text="@string/communication_pref_and_loyalty_terms"
+                    android:textColor="@color/light_black_666666"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/image_right_arrow_comm"
+                    android:layout_width="18dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/arrow" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_veiw_more_business"
+            android:layout_width="500dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/card_view_comm"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="23dp"
+            card_view:cardCornerRadius="2dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_more_business"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/more_business_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/more_business_info"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/communication" />
+
+                <TextView
+                    android:id="@+id/more_business_info"
+                    android:layout_width="710dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/more_business_icon"
+                    android:gravity="center_vertical"
+                    android:text="@string/more_business_information"
+                    android:textColor="@color/light_black_666666"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/websites"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_alignLeft="@+id/more_business_info"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/more_business_info"
+                    android:layout_below="@+id/more_business_info"
+                    android:text="@string/website_hours_attributes"
+                    android:textColor="@color/grey_e5e5e5" />
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="18dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/arrow" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/relative_offers"
+            android:layout_width="500dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/card_veiw_more_business"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/offers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Offers"
+                android:textColor="@color/black_000000"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_fluer"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_below="@+id/relative_offers"
+            android:background="@android:color/transparent">
+
+            <RelativeLayout
+                android:id="@+id/relative_fluer1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle">
+
+                <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+                    android:id="@+id/img_pastry"
+                    android:layout_width="450dp"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/offer2"
+                    android:tint="@color/transparent_black_000000"
+                    app:siShape="@drawable/rounded_rectangle" />
+
+                <TextView
+                    android:id="@+id/fluer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/img_pastry"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/fluer"
+                    android:textColor="@color/black_000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/min_spend_fluer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/fluer"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/minspend"
+                    android:textColor="@color/grey_e5e5e5"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/modern_meadow_fluer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/modernmeadowcafe"
+                    android:textColor="@color/black_000000" />
+
+                <TextView
+                    android:id="@+id/expires_in_fluer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/expires"
+                    android:textColor="@color/grey_e5e5e5" />
+
+                <TextView
+                    android:id="@+id/cancelled_price_fluer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/modern_meadow_fluer"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/strike_through"
+                    android:text="@string/fluer_price"
+                    android:textColor="@color/grey_e5e5e5" />
+
+                <TextView
+                    android:id="@+id/free_fluer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/cancelled_price_fluer"
+                    android:layout_alignRight="@+id/cancelled_price_fluer"
+                    android:layout_alignTop="@+id/expires_in_fluer"
+                    android:text="@string/free"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bookmark" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative16"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_below="@id/relative_fluer">
+
+            <RelativeLayout
+                android:id="@+id/relative13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle">
+
+                <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+                    android:id="@+id/image_choco"
+                    android:layout_width="450dp"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/offer1"
+                    android:tint="@color/transparent_black_000000"
+                    app:siShape="@drawable/rounded_rectangle" />
+
+                <TextView
+                    android:id="@+id/choco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/image_choco"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/chocopastry"
+                    android:textColor="@color/black_000000"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/modern_meadow_choco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/modernmeadowcafe"
+                    android:textColor="@color/grey_e5e5e5" />
+
+                <TextView
+                    android:id="@+id/expires_choco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/expires"
+                    android:textColor="@color/grey_e5e5e5" />
+
+
+                <TextView
+                    android:id="@+id/upto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/image_choco"
+                    android:layout_alignRight="@+id/image_choco"
+                    android:layout_alignTop="@+id/expires_choco"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginRight="18dp"
+                    android:text="@string/upto10off"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/bookmark_choco"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bookmark" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative17"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_below="@id/relative16">
+
+            <RelativeLayout
+                android:id="@+id/relative14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle">
+
+                <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+                    android:id="@+id/chicken_image"
+                    android:layout_width="450dp"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/offer3"
+                    android:tint="@color/transparent_black_000000"
+                    app:siShape="@drawable/rounded_rectangle" />
+
+                <TextView
+                    android:id="@+id/chicken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/chicken_image"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/grilledchickensandwich"
+                    android:textColor="@color/black_000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Modern_Meadow_chicken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/modernmeadowcafe"
+                    android:textColor="@color/grey_e5e5e5" />
+
+                <TextView
+                    android:id="@+id/expires_in_chicken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/expires"
+                    android:textColor="@color/grey_e5e5e5" />
+
+                <TextView
+                    android:id="@+id/cancelled_price_chicken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/price_chicken"
+                    android:layout_alignRight="@+id/price_chicken"
+                    android:layout_alignTop="@+id/Modern_Meadow_chicken"
+                    android:background="@drawable/strike_through"
+                    android:text="@string/_14_50"
+                    android:textColor="@color/grey_e5e5e5" />
+
+
+                <TextView
+                    android:id="@+id/price_chicken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/chicken_image"
+                    android:layout_alignRight="@+id/chicken_image"
+                    android:layout_alignTop="@+id/expires_in_chicken"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginRight="18dp"
+                    android:text="@string/_10_77"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bookmark" />
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_see_other_offers"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/relative17"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+
+            <RelativeLayout
+                android:id="@+id/relative80"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/relative17"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle">
+
+                <TextView
+                    android:id="@+id/see_other_offers"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/see_other_offers_6"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/img_arrw_offers"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_some_wrong"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/card_view_see_other_offers"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:id="@+id/relative81"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/card_view_see_other_offers"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle">
+
+                <TextView
+                    android:id="@+id/some_wrong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/somethingwrong"
+                    android:textColor="@color/black_000000"
+                    android:textSize="16sp" />
+
+
+                <ImageView
+                    android:id="@+id/img_arrw_some_wrong"
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/down_arrow" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_view_some_wrong"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white_FFFFFF"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/mobile" />
+
+                    <TextView
+                        android:id="@+id/phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="41dp"
+                        android:layout_marginStart="41dp"
+                        android:text="@string/phonenumber"
+                        android:textColor="@color/black_000000"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/checkbox2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_vertical"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"
+                        android:textColor="@color/light_grey_f2f2f2" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="77dp"
+                android:layout_marginRight="23dp"
+                android:background="#c0c0c0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white_FFFFFF">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/address" />
+
+                    <TextView
+                        android:id="@+id/address_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="41dp"
+                        android:text="@string/address"
+                        android:textColor="@color/black_000000"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/checkbox3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="157dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"
+                        android:textColor="@color/grey_e5e5e5" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="77dp"
+                android:layout_marginRight="23dp"
+                android:background="#c0c0c0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linear4"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white_FFFFFF">
+
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/other" />
+
+                    <TextView
+                        android:id="@+id/menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="41dp"
+                        android:text="@string/menuincorrect"
+                        android:textColor="@color/black_000000"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="37dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"
+                        android:textColor="@color/light_grey_f2f2f2" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="77dp"
+                android:layout_marginRight="23dp"
+                android:background="#c0c0c0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linear5"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white_FFFFFF">
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/menu" />
+
+                    <TextView
+                        android:id="@+id/other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="41dp"
+                        android:text="@string/other"
+                        android:textColor="@color/black_000000"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/checkbox"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="177dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"
+                        android:textColor="@color/light_grey_f2f2f2" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_FFFFFF"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTxt1"
+                    android:layout_width="240dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="61dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/square_edittext"
+                    android:gravity="left"
+                    android:hint="Demo"
+                    android:maxLines="10" />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_below="@+id/editTxt1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="@string/submit"
+                    android:textColor="@color/white_FFFFFF"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/ccd_loyalty"
+            android:layout_marginRight="10dp"
+            android:background="#F0A804"
+            android:padding="4dp"
+            android:text="@string/gold"
+            android:textColor="@color/white_FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ccd_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignEnd="@+id/ccd_loyalty"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/ccd_loyalty"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="39dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/back_arrow_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:onClick="backPage"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:id="@+id/share_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/back_arrow_icon"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/share" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
